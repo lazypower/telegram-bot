@@ -1,14 +1,18 @@
 do
 
 function run(msg, matches)
-  return "I'm hosted on github at: https://github.com/chuckbutler/telegram-bot \n Fork me and propose a merge to the 'Deploy' branch"
+  return 'Fork me! Im on Github '.. [[ 
+  Checkout http://git.io/vvNg4
+  ]]
 end
 
 return {
-  description = "Want to patch me?",
-  usage = "!patch",
-  patterns = {"^!patch"},
-  run = run
+  description = "Shows bot developer info", 
+  usage = "!patch: Shows how to patch the bot",
+  patterns = {
+    "^!patch$"
+  }, 
+  run = run 
 }
 
 end
