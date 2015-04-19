@@ -41,7 +41,6 @@ return {
   description = "Super secret emoticons",
   usage = "Its a secret",
   patterns = {
-              "^(le)",
               "^(awyee)",
               "^(bender)",
               "^(br)",
