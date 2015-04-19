@@ -60,7 +60,7 @@ local function run(msg, matches)
 
   local receiver = get_receiver(msg)
   print("GIF URL"..gif_url)
-  local text = 'Preparing to make you laugh'
+  local text = ''
   local cb_extra = {
     gif_url = gif_url,
     receiver = receiver
