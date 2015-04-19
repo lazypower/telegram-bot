@@ -14,8 +14,12 @@ end
 
 return {
   description = "Magic 8Ball",
-  usage = "!8ball",
-  patterns = {"^!8ball"},
+  usage = {
+            "!8ball"
+          },
+  patterns = {
+             "^!8ball"
+             },
   run = run
 }
 
