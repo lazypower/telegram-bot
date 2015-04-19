@@ -1,7 +1,7 @@
 do
 
 local function run(msg, matches)
-  if matches[1] == "!rpshelp" then
+  if matches[1] == "!chart" then
     local chart_url = "http://a.tgcdn.net/images/products/additional/large/db01_lizard_spock.jpg"
     send_document_from_url(receiver, chart_url)
   else
@@ -14,11 +14,11 @@ return {
   description = "Settle Arguments",
   usage = {
            "!rps: Play rock paper scissors lizard spock",
-           "!rpschart: Forgot the rules? look at the chart"
+           "!chart: Forgot the rules? look at the chart"
            },
   patterns = {
               "^!rps",
-              "^!rpshelp"
+              "^!chart"
              },
   run = run
 }
