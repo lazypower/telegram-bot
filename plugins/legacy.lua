@@ -3,7 +3,7 @@ do
 local function run(msg, matches)
 
   local image_map = {}
-  image_map["(awyee)"] = "http://i.imgur.com/Fpyzmcg.png"
+  image_map["awyee"] = "http://i.imgur.com/Fpyzmcg.png"
   image_map["(bender)"] = "http://i.imgur.com/VwiWAIX.png"
   image_map["(br)"] = "http://i.imgur.com/UeQPhSV.png"
   image_map["(crabnicholson)"] = "http://i.imgur.com/FITON1H.png"
@@ -32,6 +32,7 @@ local function run(msg, matches)
   image_map["(repost)"] = "http://i.imgur.com/eBvRcIN.png"
   image_map["(rustled)"] = "http://i.imgur.com/iwUuX6Z.png"
 
+  print("Matched ".. matches[1])
   local reciever = get_receiver(msg)
   local image_url = image_map[matches[1]]
   send_photo_from_url(reciever, image_url)
@@ -41,7 +42,7 @@ return {
   description = "Super secret emoticons",
   usage = "Its a secret",
   patterns = {
-              "^%(awyee%)",
+              "^awyee",
               "^%(bender%)",
               "^%(br%)",
               "^%(crabnicholson%)",
