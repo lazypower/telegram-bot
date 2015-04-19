@@ -3,6 +3,7 @@ do
 local function run(msg, matches)
   if matches[1] == "!chart" then
     local chart_url = "http://a.tgcdn.net/images/products/additional/large/db01_lizard_spock.jpg"
+    local receiver = get_receiver(msg)
     send_photo_from_url(receiver, chart_url)
   else
     local answers = {'Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'}
