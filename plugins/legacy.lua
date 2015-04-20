@@ -31,7 +31,7 @@ local function run(msg, matches)
   image_map["(pedo)"] = "http://i.imgur.com/QCf5Twh.png"
   image_map["(repost)"] = "http://i.imgur.com/eBvRcIN.png"
   image_map["(rustled)"] = "http://i.imgur.com/iwUuX6Z.png"
-  image_map["fuck this"] = "http://i.imgur.com/tYYIvcH.gifv"
+  image_map["fuck this"] = "http://i.imgur.com/tYYIvcH.gif"
   print("Matched ".. matches[1])
   local reciever = get_receiver(msg)
   local image_url = image_map[matches[1]]
