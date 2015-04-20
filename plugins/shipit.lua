@@ -29,7 +29,7 @@ local function run(msg, matches)
         "http://i.imgur.com/dXzZETc.png",
     }
     local receiver = get_receiver(msg)
-    img = answers[math.random(#images)]
+    img = images[math.random(#images)]
     send_photo_from_url(receiver, img)
 end
 
