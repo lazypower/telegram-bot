@@ -34,6 +34,7 @@ local function run(msg, matches)
   image_map["fuck this"] = "http://i.imgur.com/tYYIvcH.gif"
   print("Matched ".. matches[1])
   local reciever = get_receiver(msg)
+  print("Receiver"..receiver)
   local image_url = image_map[matches[1]]
   send_photo_from_url(reciever, image_url)
  end
