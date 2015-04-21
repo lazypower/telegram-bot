@@ -1,6 +1,5 @@
 do
 local URL = "http://danbooru.donmai.us"
-local URL_NEW = "/posts.json"
 local URL_POP = "/explore/posts/popular.json"
 
 local function get_post(url)
@@ -19,7 +18,7 @@ local function run(msg, matches)
 
   local url = URL
 
-  url = url .. URL_NEW
+  url = url .. URL_POP
   local post = get_post(url)
 
   local receiver = get_receiver(msg)
