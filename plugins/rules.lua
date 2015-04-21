@@ -53,7 +53,8 @@ local function run(msg, matches)
    }
 
 
-   if rules[matches[1]] then
+   print(matches[1])
+   if matches[1] < 48 and matches[1] > 0 then
        return rules[matches[1]]
    else
        return "Learn the rules pleb."
