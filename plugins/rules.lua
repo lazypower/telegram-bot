@@ -54,8 +54,9 @@ local function run(msg, matches)
 
 
    print(matches[1])
-   if matches[1] < 48 and matches[1] > 0 then
-       return rules[matches[1]]
+   ruleid = tonumber(matches[1])
+   if ruleid < 48 and ruleid > 0 then
+       return rules[ruleid]
    else
        return "Learn the rules pleb."
    end
