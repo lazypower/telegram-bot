@@ -53,8 +53,8 @@ local function run(msg, matches)
    }
 
 
-   if rule[matches[1]] then
-       return rule[matches[1]]
+   if rules[matches[1]] then
+       return rules[matches[1]]
    else
        return "Learn the rules pleb."
    end
