@@ -3,14 +3,20 @@ do
 	api_pokedex = "api/pokedex/1/"
 
 	local function run(msg, matches)
-	  -- local pokemon = matches[1];
+		local pokemon = matches[1];
 
-	  -- if full_pokedex == nil then
-	  -- 	local pokedex_request = httpRequest(api_root..api_pokedex)
-	  -- 	full_pokedex = pokedex_request.pokemon
-	  -- end
+		if full_pokedex == nil then
+	  		local pokedex_request = httpRequest(api_root..api_pokedex)
+	  		full_pokedex = pokedex_request.pokemon
+		end
 
-	  return "no errors yet"
+		for dex = 1, #full_pokedex do
+			if pokemon == full_pokedex[dex].name then
+				return full_pokedex[dex].resource_uri
+			end
+		end
+
+		return "pokemon not found :["
 	end
 
 	return {
