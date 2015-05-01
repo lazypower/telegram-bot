@@ -10,11 +10,13 @@ do
 	  		full_pokedex = pokedex_request.pokemon
 		end
 
-		for dex = 1, #full_pokedex do
-			if pokemon == full_pokedex[dex].name then
-				return full_pokedex[dex].resource_uri
-			end
-		end
+		return full_pokedex[1].name
+
+		-- for dex = 1, #full_pokedex do
+		-- 	if pokemon == full_pokedex[dex].name then
+		-- 		return full_pokedex[dex].resource_uri
+		-- 	end
+		-- end
 
 		return "pokemon not found :["
 	end
