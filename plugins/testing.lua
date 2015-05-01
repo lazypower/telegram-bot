@@ -6,8 +6,9 @@ do
 		local pokemon = matches[1];
 
 		if full_pokedex == nil then
-	  		local pokedex_request = httpRequest(api_root..api_pokedex)
-	  		full_pokedex = pokedex_request.pokemon
+	  		local res = httpRequest(api_root..api_pokedex)
+	  		local pokedex_data = json:decode(res)
+	  		full_pokedex = pokedex_data.pokemon
 		end
 
 		return full_pokedex[1].name
@@ -18,7 +19,7 @@ do
 		-- 	end
 		-- end
 
-		return "pokemon not found :["
+		-- return "pokemon not found :["
 	end
 
 	return {
