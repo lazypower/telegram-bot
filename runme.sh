@@ -2,4 +2,4 @@
 
 set -e
 
-docker run -v ~/octobot/data:/home/ubuntu/telegram-bot/data -d octobot:latest
+docker run -v ~/octobot/data:/home/ubuntu/dockerfile/telegram-bot/data -d octobot:latest
