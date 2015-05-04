@@ -33,6 +33,16 @@ evaluate your contribution.
 
 Thanks for caring enough to share and help make Octobot better!
 
+Build / Docker stuff now?
+-----------------
+
+Yep! this bot runs in docker. If you want to run it you'll have to hack on your
+own credentials and get things setup. if you follow and poke around the source
+i'm sure you'll figure it out.
+
+Enjoy :)
+
+
 Issues?
 ------------
 If you have an issue please [open](https://github.com/chuckbutler/telegram-bot/issues) one.
